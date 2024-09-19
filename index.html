@@ -10,3 +10,30 @@
     <p>Questa è una versione di prova del Token Test.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Test Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Token Test</h1>
+    <p>Trascina i gettoni nelle aree corrette secondo le istruzioni.</p>
+
+    <div class="token-area">
+        <!-- Gettoni colorati -->
+        <div class="token" id="token1" draggable="true" ondragstart="drag(event)" style="background-color: red;">1</div>
+        <div class="token" id="token2" draggable="true" ondragstart="drag(event)" style="background-color: blue;">2</div>
+        <div class="token" id="token3" draggable="true" ondragstart="drag(event)" style="background-color: green;">3</div>
+        <div class="token" id="token4" draggable="true" ondragstart="drag(event)" style="background-color: yellow;">4</div>
+    </div>
+
+    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Area di destinazione</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
